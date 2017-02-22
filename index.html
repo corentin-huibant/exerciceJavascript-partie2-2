@@ -9,7 +9,10 @@
     <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom"/>
   </form>
   <script>
-    var name = document.getElementById("nom").addEventListener("blur" , alert("Merci de votre participation");)
+    var name = document.getElementById("nom");
+    document.getElementById("nom").addEventListener("blur" , function() {
+    alert("Merci de votre participation");
+    })
   </script>
 </body>
 </html>
